@@ -1,0 +1,114 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* Fondo blanco de la página */
+  }
+  /* Container */
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  /* Sidebar común */
+  .sidebar {
+    width: 250px;
+    background-color: #fff; /* Fondo blanco para la sidebar */
+    color: #2d2d2d; /* Texto oscuro por defecto */
+    padding: 20px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Sombras más oscuras */
+  }
+  /* Estilo para las opciones de las sidebars */
+  .sidebar-title {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    cursor: default; /* Título ya no es clickeable */
+  }
+  /* Fondo de la title, color #235c4e */
+  .sidebar-title-background {
+    background-color: #235c4e;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+  }
+  .sidebar-icon {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+  }
+  /* Estilo para las opciones dentro de la sidebar */
+  .option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: white; /* Blanco por defecto */
+    color: #2d2d2d; /* Color de texto oscuro para las opciones */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+  }
+  .option:hover {
+    background-color: #e0e0e0; /* Gris claro cuando pasas el mouse */
+  }
+  .option.active {
+    background-color: #628a80; /* Verde cuando se selecciona */
+    color: white; /* Texto blanco cuando está seleccionado */
+  }
+  /* Estilos para las subopciones */
+  .suboptions {
+    padding-left: 20px;
+    margin-top: 5px;
+  }
+  .suboption {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+  }
+  .suboption:hover {
+    background-color: #a8d3bb; /* Verde más suave para subopciones */
+  }
+  /* Estilo para Sidebar en el lado izquierdo */
+  .sidebar-left {
+    position: fixed;
+    top: 200px;
+    left: 0;
+    height: 100vh;
+    z-index: 10;
+  }
+  /* Estilo para Sidebar en el centro */
+  .sidebar-center {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100vh;
+    z-index: 9;
+  }
+  /* Estilo para Sidebar en el lado derecho */
+  .sidebar-right {
+    position: fixed;
+    top: 20px;
+    right: 0;
+    height: 100vh;
+    z-index: 8;
+  }
+  /* Estilos adicionales */
+  .sidebar-options {
+    margin-top: 20px;
+  }
+  .options {
+    padding-left: 20px;
+  } 

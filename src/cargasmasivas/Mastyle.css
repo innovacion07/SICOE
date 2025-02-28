@@ -1,0 +1,30 @@
+/* Estilos generales */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem; /* Unidad relativa */
+  }
+  
+  .app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .mainContent {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+    flex: 1;
+  }
+  
+  /* Media Queries para responsividad */
+  @media (max-width: 1200px) {
+    .mainContent
+    .app
+    .body {
+      flex-direction: column;
+    }
+  }

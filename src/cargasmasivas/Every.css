@@ -1,0 +1,96 @@
+.instrucciones {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .instruccionesTitle {
+    margin: 0;
+    color: #333;
+  }
+  
+  .form {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .formTitle {
+    margin: 0;
+    color: #333;
+    font-size: 1.2rem; /* Unidad relativa */
+  }
+  
+  .iconoContainer {
+    text-align: center;
+    margin: 1rem 0;
+  }
+  
+  .inlineInputs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .inputGroup {
+    flex: 1;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-size: 1rem; /* Unidad relativa */
+  }
+  
+  .select {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem; /* Unidad relativa */
+  }
+  
+  .exportarContainer {
+    text-align: center;
+    margin: 1rem 0;
+  }
+  
+  .exportarButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #cccc;
+    color: rgb(41, 38, 38);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem; /* Unidad relativa */
+  }
+  
+  .registrarButton {
+    padding: 1rem 2rem;
+    background-color: #235C4E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem; /* Unidad relativa */
+  }
+  
+  @media (max-width: 1200px) {
+    .instruccionesTitle
+    .exportarButton
+    .form
+    .formTitle
+    .instrucciones
+    .registrarButton
+    .select
+    .inlineInputs {
+        width: 100%;
+
+      flex-direction: column;
+    }
+  }
